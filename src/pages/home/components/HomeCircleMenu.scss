@@ -35,7 +35,7 @@
   background-color: green;
   color: white;
   margin: 0 auto;
-  width: 100%;
+  width: inherit;
 
   left: 50%;
   top: 50%;
@@ -44,30 +44,123 @@
 }
 
 .homepage_-_circle-menu_--_column {
-
+  display: block;
 }
+
+
+.circle-side {
+  $circle-side-size: 125px;
+  $border-size: 15px;
+  $border-color: orange;
+
+  position: absolute;
+  //top: -38px;
+  //left: 0;
+  //right: 0;
+  margin: 0 auto;
+  height: $circle-side-size;
+  width: $circle-side-size;
+  background-color: transparent;
+  border-top: $border-size solid $border-color;
+  border-left: $border-size solid $border-color;
+  border-top-left-radius: 100%;
+
+  opacity: 0.7;
+}
+
+
+
+.homepage_-_circle-menu_--_side-projects {
+  top: -30px;
+  left: 0;
+  right: 0;
+  background-color: rgba(white, 0.5);
+  transform: rotate(45deg);
+}
+
+.homepage_-_circle-menu_--_side-blogs {
+  top: 70px;
+  //left: 210px;
+  right: -10px;
+  //bottom: 50px;
+  background-color: rgba(white, 0.5);
+  transform: rotate(120deg);
+}
+
+.homepage_-_circle-menu_--_side-about {
+  //top: 0px;
+  //left: 210px;
+  right: 35px;
+  bottom: 10px;
+  background-color: rgba(white, 0.5);
+  transform: rotate(190deg);
+}
+
+.homepage_-_circle-menu_--_side-contact {
+}
+
+.homepage_-_circle-menu_--_side-experience {
+}
+
 
 .tempcircle {
   //width: 400px;
   //height: 400px;
-  width: auto;
-  height: 100px;
+  //display: inline-block;
+  $viewport-height: 50vh;
+
+  width: $viewport-height;
+  height: $viewport-height;
   background: blue;
   border-radius: 50%;
   position: relative;
   margin: 0 auto;
+  z-index: -1;
+  opacity: 0.2;
+
+  //visibility: hidden;
 }
 
 
-// Animation ----------------------------------------------------------------------
+.tempImage{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: -1;
+  background-color: red;
+  height: 100%;
+  //visibility: hidden;
+
+  //width: 50px;
+}
+
+
+
+// Animation -------------------------------------------------------------------
+.circle-side {
+  transition: all 300ms ease-in-out;
+}
 
 // Active ----------------------------------------------------------------------
 
 // Hover -----------------------------------------------------------------------
-
+.circle-side:hover {
+  border-radius: 25px;
+}
 // Layouts ---------------------------------------------------------------------
 
 // Media Sizes -----------------------------------------------------------------
+
+// Mixins ----------------------------------------------------------------------
+
+//@mixin circle-side-props() {
+//  top: -38px;
+//  left: 0;
+//  right: 0;
+//  background-color: rgba(white, 0.5);
+//}
 
 
 /*******************************************************************************
