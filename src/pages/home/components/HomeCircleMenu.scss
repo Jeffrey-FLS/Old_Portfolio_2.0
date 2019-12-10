@@ -34,22 +34,33 @@
 .homepage_-_circle-menu {
   background-color: green;
   color: white;
-  margin: 0 auto;
+  //margin: 0 auto;
   width: inherit;
-
-  left: 50%;
-  top: 50%;
+  height: 100%;
   position: absolute;
-  transform: translate(-50%,-50%);
+
+  //left: 50%;
+  //top: 50%;
+  //transform: translate(-50%,-50%);
 }
 
 .homepage_-_circle-menu_--_column {
   display: block;
 }
 
+.homepage_-_circle-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 10% auto;
+  transform: scale(0.7);
+}
+
 
 .circle-side {
-  $circle-side-size: 125px;
+  //$circle-side-size: 125px;
+  $circle-side-size: 100px;
   $border-size: 15px;
   $border-color: orange;
 
@@ -65,43 +76,61 @@
   border-left: $border-size solid $border-color;
   border-top-left-radius: 100%;
 
+  //transform: scaleX(0.5) !important;
+  //transform: scale(0.5) !important;
+
   opacity: 0.7;
 }
 
+// The 5 Sides of the Circle ---------------------------------------------------
 
+$background-color: blue;
 
 .homepage_-_circle-menu_--_side-projects {
-  top: -30px;
+  top: -7%;
   left: 0;
   right: 0;
-  background-color: rgba(white, 0.5);
+  background-color: rgba($background-color, 0.5);
   transform: rotate(45deg);
 }
 
 .homepage_-_circle-menu_--_side-blogs {
-  top: 70px;
-  //left: 210px;
-  right: -10px;
+  top: 20%;
+  //left: 0px;
+  right: 30%;
   //bottom: 50px;
-  background-color: rgba(white, 0.5);
-  transform: rotate(120deg);
+  background-color: rgba($background-color, 0.5);
+  transform: rotate(135deg);
 }
 
 .homepage_-_circle-menu_--_side-about {
   //top: 0px;
   //left: 210px;
-  right: 35px;
-  bottom: 10px;
-  background-color: rgba(white, 0.5);
-  transform: rotate(190deg);
+  right: 32%;
+  bottom: 2%;
+  background-color: rgba($background-color, 0.5);
+  transform: rotate(180deg);
 }
 
 .homepage_-_circle-menu_--_side-contact {
+  //top: 0px;
+  left: 30%;
+  //right: 32%;
+  bottom: 3%;
+  background-color: rgba($background-color, 0.5);
+  transform: rotate(270deg);
 }
 
 .homepage_-_circle-menu_--_side-experience {
+  top: 18%;
+  left: 25%;
+  //right: 32%;
+  //bottom: 2%;
+  background-color: rgba($background-color, 0.5);
+  transform: rotate(-25deg);
 }
 
+// Temp Classes ----------------------------------------------------------------
 
 .tempcircle {
   //width: 400px;

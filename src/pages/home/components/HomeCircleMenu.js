@@ -1,7 +1,8 @@
 
 import React, {Component} from 'react';
 import './HomeCircleMenu.scss';
-import image from "../../../assets/ring-divided.png";
+// import image from "../../../assets/ring-divided.png";
+import image from "../../../assets/circle.png";
 
 class HomeCircleMenu extends Component {
     render() {
@@ -12,12 +13,12 @@ class HomeCircleMenu extends Component {
                 <div className="homepage_-_circle-menu_--_side-projects circle-side"></div>
                 <div className="homepage_-_circle-menu_--_side-blogs circle-side"></div>
                 <div className="homepage_-_circle-menu_--_side-about circle-side"></div>
+                <div className="homepage_-_circle-menu_--_side-contact circle-side"></div>
+                <div className="homepage_-_circle-menu_--_side-experience circle-side"></div>
 
                 <img src={image} alt="" className="tempImage"/>
 
-                {/*<div className="tempbody">*/}
-                    <div className="tempcircle"></div>
-                {/*</div>*/}
+                {/*    <div className="tempcircle"></div>*/}
 
             </div>
         );
