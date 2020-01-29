@@ -11,10 +11,10 @@ class HomeCircleMenu extends Component {
 
 
                 <div className="homepage_-_circle-menu_--_side-projects circle-side"></div>
-                <div className="homepage_-_circle-menu_--_side-blogs circle-side"></div>
-                <div className="homepage_-_circle-menu_--_side-about circle-side"></div>
-                <div className="homepage_-_circle-menu_--_side-contact circle-side"></div>
-                <div className="homepage_-_circle-menu_--_side-experience circle-side"></div>
+                {/*<div className="homepage_-_circle-menu_--_side-blogs circle-side"></div>*/}
+                {/*<div className="homepage_-_circle-menu_--_side-about circle-side"></div>*/}
+                {/*<div className="homepage_-_circle-menu_--_side-contact circle-side"></div>*/}
+                {/*<div className="homepage_-_circle-menu_--_side-experience circle-side"></div>*/}
 
                 <img src={image} alt="" className="tempImage"/>
 

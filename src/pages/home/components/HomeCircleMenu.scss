@@ -36,7 +36,7 @@
   color: white;
   //margin: 0 auto;
   width: inherit;
-  height: 100%;
+  height: 50%;
   position: absolute;
 
   //left: 50%;
@@ -54,44 +54,87 @@
   left: 0;
   right: 0;
   margin: 10% auto;
-  transform: scale(0.7);
+  //transform: scale(0.7);
 }
 
 
 .circle-side {
-  //$circle-side-size: 125px;
-  $circle-side-size: 100px;
-  $border-size: 15px;
-  $border-color: orange;
+  background-color: rgba(lime, 0.8);
+  height: 24%;
+  width: 10%;
+  //height: inherit;
+  //width: inherit;
+  overflow: hidden;
+  margin: 10% auto;
+  position: relative;
 
-  position: absolute;
-  //top: -38px;
-  //left: 0;
-  //right: 0;
-  margin: 0 auto;
-  height: $circle-side-size;
-  width: $circle-side-size;
-  background-color: transparent;
-  border-top: $border-size solid $border-color;
-  border-left: $border-size solid $border-color;
-  border-top-left-radius: 100%;
+  &::after{
+    $circle-side-size: 100px;
+    $border-size: 15px;
+    $border-color: orange;
+    transform: rotate(-15deg);
 
-  //transform: scaleX(0.5) !important;
-  //transform: scale(0.5) !important;
+    //top: 0;
+bottom: -10px;
+    position: absolute;
+    margin: 0 auto;
+    height: $circle-side-size;
+    width: $circle-side-size;
+    background-color: rgba(red, 0.8);
+    border-top: $border-size solid $border-color;
+    border-left: $border-size solid $border-color;
+    border-top-left-radius: 100%;
 
-  opacity: 0.7;
+    //transform: scaleX(0.5) !important;
+    //transform: scale(0.5) !important;
+    opacity: 0.7;
+    content: "";
+  }
 }
+
+
+
+//.circle-side {
+//  //$circle-side-size: 125px;
+//  $circle-side-size: 200px;
+//  $border-size: 15px;
+//  $border-color: orange;
+//
+//  position: absolute;
+//  margin: 0 auto;
+//  height: $circle-side-size;
+//  width: $circle-side-size;
+//  background-color: transparent;
+//  border-top: $border-size solid $border-color;
+//  border-left: $border-size solid $border-color;
+//  border-top-left-radius: 100%;
+//
+//  //transform: scaleX(0.5) !important;
+//  //transform: scale(0.5) !important;
+//
+//  opacity: 0.7;
+//
+//  &::after{
+//    content: "";
+//    position: absolute;
+//    background-color: rgba(grey, 0.8);
+//    height: inherit;
+//    width: inherit;
+//    overflow: hidden;
+//    z-index: 1;
+//  }
+//}
 
 // The 5 Sides of the Circle ---------------------------------------------------
 
 $background-color: blue;
 
 .homepage_-_circle-menu_--_side-projects {
-  top: -7%;
+  top: -17%;
   left: 0;
   right: 0;
   background-color: rgba($background-color, 0.5);
-  transform: rotate(45deg);
+  //transform: rotate(45deg);
 }
 
 .homepage_-_circle-menu_--_side-blogs {
